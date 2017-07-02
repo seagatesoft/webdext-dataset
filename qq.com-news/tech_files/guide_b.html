@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://www.qq.com/chrometips/tipsguide/guide_b.htm?site=tech -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>引导框B</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="http://www.qq.com/chrometips/tipsguide/guide_b.htm?site=tech" rel="stylesheet">
+<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	.guide{
+		background:url(http://mat1.gtimg.com/www/chrometips/guide/bg_b.png) no-repeat;
+		width: 331px;
+		height: 148px;
+		position: fixed;
+	}
+	.txt{
+		position: absolute;
+	    top: 14px;
+	    left: 28px;
+	    color: #666;
+	    font-size: 18px;
+	    font-weight: bold;
+	    padding-left:0;
+	    font-family: "microsoft yahei";
+	}
+	.txt .permit{
+		color: #3784f1;
+	}
+	#close-btn1,#close-btn2{
+		position: absolute;
+		cursor: pointer;
+		z-index: 999;
+	}
+	#close-btn1{
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+	}
+	#close-btn2{
+		top: 60px;
+		right: 18px;
+		width: 30px;
+		height: 30px;
+	}
+	#tips{
+		top: 62px;
+		left: 14px;
+		width: 302px;
+		height: 65px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+	}
+</style>
+</head>
+<body>
+    <div class="guide" id="guide" style="display: none;">
+    	<div class="txt">请点击<span class="permit">「允许」</span>订阅腾讯<span id="sitename">科技</span>热点</div>
+    	<i id="close-btn1" onclick="closeself()"></i>
+    	<i id="close-btn2" onclick="closeself()"></i>
+    	<div id="tips" style="background-image: url(&quot;http://mat1.gtimg.com/www/chrometips/guide/tech.jpg&quot;);"></div>
+    </div>
+    <script>
+    	function closeself(){
+    		document.getElementById("guide").style.display = "none";
+    	}
+    	try{
+    		var url = window.location.href,
+	    		site = "",
+	    		sitecn = "";
+	    	if(window.location.search){
+	    		site = window.location.search.split("site=")[1];
+	    	}
+	    	switch(site){
+	    		case "tech" : sitecn = "科技";break;
+	    		case "edu" : sitecn = "教育";break;
+	    		case "house" : sitecn = "房产";break;
+	    		case "auto" : sitecn = "汽车";break;
+	    		case "ent" : sitecn = "娱乐";break;
+	    		case "finance" : sitecn = "财经";break;
+	    		case "news" : sitecn = "新闻";break;
+	    		case "games" : sitecn = "游戏";break;
+	    		case "cul" : sitecn = "文化";break;
+	    		case "fashion" : sitecn = "时尚";break;
+	    		case "sports" : sitecn = "体育";break;
+	    		default :sitecn = "资讯";site="fashion";
+	    	}
+	    	document.getElementById("sitename").innerHTML = sitecn;
+	    	document.getElementById("tips").style.backgroundImage = "url('http://mat1.gtimg.com/www/chrometips/guide/"+site+".jpg')";
+    	}catch(e){}
+    </script>
+
+</body></html>

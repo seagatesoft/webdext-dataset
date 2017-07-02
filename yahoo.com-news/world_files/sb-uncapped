@@ -1,0 +1,11 @@
+var sb = {"pixels":[41],"BR_APS":"3WVh4GlPfBRwBVc4HtQ"};
+var delay = 0;
+for(var i=0;i<sb.pixels.length;i++) {
+if (i % 3 == 0 && i != 0)
+delay += 200;
+(function (i) {
+setTimeout(function () {
+(new Image()).src='https'+'://'+'geo-um.btrll.com/v1/map_pixel/sb/'+sb.pixels[i]+'.png';
+}, delay);
+})(i);
+}

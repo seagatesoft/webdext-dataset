@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://d14qd3he45186l.cloudfront.net/ads-search32.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+<script async="" src="./async-ads.js"></script><script type="text/javascript" charset="utf-8">
+try{
+	if ( Object.defineProperty )
+	{
+    	Object.defineProperty(document, "referrer", {get : function(){ return "www.amazon.com"; }});
+	}
+}
+catch(e)
+{
+}
+
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(O)[0];L.async=1;L.src='https://www.adsensecustomsearchads.com/adsense/search/async-ads.js';  e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+</script>
+</head>
+	<body marginwidth="0" marginheight="0">
+		<div id="sponsoredLinksContent" style="font-weight: normal; text-align: center; height: 212px;"><iframe frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" scrolling="no" width="100%" name="{&quot;name&quot;:&quot;master-1&quot;,&quot;master-1&quot;:{&quot;clicktrackUrl&quot;:&quot;http://rd.a9.com/srv/redirect/?info=ANmeYMrv2vDvQQ6JmUIPsIlttPZgcbKBOrono9Cxlenekux3SRye0AMHC2xyQm6PYhDlpFXvem-NL.Cp3KGoYHxT8PtTgOT-NOVamBjs55z1d6ChiW1XLBuuX-0EpFkxKoSNkPr9PDyH93vfOiOekVgnYPCqgjKselKt7VSmS5hIlc.ceZdw4M58QuF0sVfpSVb2XmRrHNd.suq190eRPfZMeYO6-YbsP-IKP9vTGXN-0xWydMMXGATAV2hWEQU1oM85fNaaKHG-MVA8HpuZRJSy76bPpGpN1rFh49orLoxa3nMHZh.JlYHEiT3gO75YMAG8CryV9EK0n32PLwYhmk4qJhDr-Bd.dw__&amp;awt=1&amp;s=&quot;,&quot;container&quot;:&quot;sponsoredLinksContent&quot;,&quot;linkTarget&quot;:&quot;_blank&quot;,&quot;lines&quot;:3,&quot;adIconUrl&quot;:&quot;http://afs.googleusercontent.com/amazon/icon-offsite-sl-7069-t4._V171196157_.png&quot;,&quot;adIconLocation&quot;:&quot;ad-left&quot;,&quot;type&quot;:&quot;ads&quot;,&quot;hl&quot;:&quot;en&quot;,&quot;columns&quot;:1,&quot;horizontalAlignment&quot;:&quot;left&quot;,&quot;resultsPageQueryParam&quot;:&quot;query&quot;,&quot;domTemplate&quot;:&quot;twoColumnNumbered&quot;,&quot;cssFileName&quot;:&quot;amazon_numbered&quot;}}" id="master-1" src="./ads.html" style="visibility: visible; height: 212px;"></iframe></div>
+		<script type="text/javascript" charset="utf-8">
+		var readyCallGoogle;
+		if(window.addEventListener) {
+			window.addEventListener("message", processSLMessage, false);
+		} else {
+			window.attachEvent("onmessage", processSLMessage);
+		}
+		var initialized = false;
+		var slParent = (document.defaultView || document.parentWindow).parent;
+		function processSLMessage(event) {
+			if(initialized) return;
+			initialized = true;
+			var inputData = JSON.parse(event.data);
+			if(!event.origin || !event.origin.match(/^https?:\/\/((\w|-|_)*[.])?amazon[.](com|de|co[.]jp|co[.]uk|ca|it|fr|es|cn|in)(:[0-9]{2,5})?\/?$/i)
+				|| !event.data || !inputData || !inputData.adProperties || !inputData.pageOptions || inputData.operation != 'showSLAds') {
+				return;
+			}
+			inputData.adProperties.visibleUrlsCallback = function(visUrls){
+				var slArgs = {
+					"visUrls": visUrls,
+					"operation": "adsReturned"
+				};
+				slParent.postMessage(JSON.stringify(slArgs), '*');
+			}
+			inputData.adProperties.iframeHeightCallback = function(height) {
+				var slArgs = {
+					"height": height,
+					"operation": "resize"
+				};
+				slParent.postMessage(JSON.stringify(slArgs), '*');
+			}
+			readyCallGoogle = new Date().getTime();
+			_googCsa('jsLoadedCallback', function() {
+				var slArgs = {
+					"operation": "jsLoaded", 
+					"readyCallGoogle": readyCallGoogle
+				}; 
+				slParent.postMessage(JSON.stringify(slArgs), '*');
+			});
+			_googCsa('ads', inputData.pageOptions, inputData.adProperties);
+		}
+		if(!initialized) {
+			var slArgs = {
+				"operation": "initializeFrame"
+			};
+			slParent.postMessage(JSON.stringify(slArgs), '*');
+		}
+		</script>
+	
+</body></html>

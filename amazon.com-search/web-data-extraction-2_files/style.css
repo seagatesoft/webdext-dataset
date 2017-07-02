@@ -1,0 +1,446 @@
+body {
+	margin: 0px;
+	-ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*---------------*/
+@font-face {
+  font-family: 'XfinityStandardTTLight';
+  src: url("https://s3.amazonaws.com/assets.spongecell.com/assets/19296/original/beeacad9011922c7031fe837cdf667ea76c960b0.woff2") format("woff2"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19297/original/a6e7996a68a9983dc83e5122d44ecad4fe1b4715.woff") format("woff"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19277/original/b2b50684d518d03f3495943c45107c480b316be3.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinityStandardTTLightItalic';
+  src: url("https://s3.amazonaws.com/assets.spongecell.com/assets/19298/original/d2fa0bf489c561ee24e0643125d3cd541b64d093.woff2") format("woff2"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19299/original/8c60b2c640283b122d9f0ea428868e32e4e6233c.woff") format("woff"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19278/original/6f7750e663d33c0fc40e531e81037fa5e5f59a5d.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff2") format("woff2"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.woff") format("woff"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinitySansMedium';
+  src: url("https://s3.amazonaws.com/assets.spongecell.com/assets/19300/original/48c7e9affb0f33ae2050766b308832be99b9521c.woff2") format("woff2"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19301/original/3ad0668f0994cb844ccd7824c6f970068925198c.woff") format("woff"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19279/original/8674ef4564ad507eaaa2c5dff14345c9181899bf.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinityStandardMedium';
+  src: url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Medium.woff2") format("woff2"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Medium.woff") format("woff"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard/XfinityStandard-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinitySansBold';
+  src: url("https://s3.amazonaws.com/assets.spongecell.com/assets/19286/original/bf2f2b3424a5148dfa724c2fdfb63d7f5d3b61c4.woff2") format("woff2"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19287/original/e47e07c11abfd771eb540bb9e07e9fec9e119c72.woff") format("woff"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19272/original/ed356a21dc6474b5ae9b308808995af6ea4551f7.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'XfinitySansExtraLight';
+  src: url("https://s3.amazonaws.com/assets.spongecell.com/assets/19291/original/1918dad33e26f24ffd41bd4709b51d44cee22d77.woff2") format("woff2"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19290/original/8c6e28c83d74b76e949660ec0d207afee7247cc1.woff") format("woff"), url("https://s3.amazonaws.com/assets.spongecell.com/assets/19274/original/db6bc20b83b8c9868a594f017275b93f1dc5bdba.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*---------------*/
+.xsl{font-family: 'XfinityStandardTTLight';font-style: normal;}
+.xsli{font-family: 'XfinityStandardTTLightItalic';font-style: normal;}
+.xsm{font-family: 'XfinitySansMedium';font-style: normal;}
+.xsb{font-family: 'XfinitySansBold';font-style: normal;}
+.xsel{font-family: 'XfinitySansExtraLight';font-style: normal;}
+
+.box {
+    position: absolute;
+    border-radius: 5px;
+    width: 184px;
+    background: #ffffff;
+    opacity: 0.9;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow:    0px 2px 9px 0px rgba(50, 50, 50, 0.56);
+	box-shadow:         0px 2px 9px 0px rgba(50, 50, 50, 0.56);
+}
+
+.boxText {
+    position: relative;
+   	color:black;
+   	text-align: center;
+   	font-family: 'XfinityStandard';
+   	font-style: normal;
+    padding: 15px 0px;
+    font-size: 14px;
+}
+
+.plus{
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    font-family: 'XfinityStandardLight';
+    font-size: 9px;
+}
+
+span{font-family: 'XfinityStandardBold';font-style: normal;}
+i{font-family: 'XfinityStandardTTLightItalic';font-style: normal;}
+b{font-family: 'XfinitySansBold';font-style: normal;}
+#container {
+	top: 0px;
+	left: 0px;
+	width: 160px;
+	height: 600px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	color: #5a5a5c;
+	/*border: 1px solid black;*/
+  	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+
+#banner {
+	top: 0px;
+	left: 0px;
+	width: 160px;
+	height: 600px;
+	display: block;
+	overflow: hidden;
+	background-image: url(bg.jpg);
+}
+
+#clicktag {
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 160px;
+    height: 600px;
+	opacity: 0;
+    z-index: 100;
+}
+
+#logo {
+	position: absolute;
+    background-image: url(xfinityLogo_red.svg);
+    background-repeat: no-repeat;
+	top: 39px;
+    right: 43px;
+    width: 73px;
+    height: 24px;
+}
+
+#device {
+	position: absolute;
+	top: 248px;
+    left: 0px;
+    width: 160px;
+    height: 196px;
+}
+
+#frame1bg {
+	position: absolute;
+	background: url(frame1.png) no-repeat;
+	width: 600px;
+	height: 500px;
+	left: -270px;
+	bottom: 150px;
+	transform: translateZ;
+}
+#screenTablet{
+    position: absolute;
+    top: 53px;
+    right: 31px;
+
+}
+
+#copydevices{
+    position: absolute;
+    color: #252525;
+    width: 160px;
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    bottom: 166px;
+}
+
+.char {visibility:hidden}
+
+#box2{
+    position: absolute;
+    top: 33px;
+    left: 80px;
+}
+
+#box3{
+    position: absolute;
+    top: 59px;
+    left: 97px;
+}
+
+#dot1 {
+	position: absolute;
+    top: 106px;
+    left: 27px;
+}
+#dot2 {
+	position: absolute;
+    top: 28px;
+    left: 71px;
+}
+#dot3 {
+	position: absolute;
+    top: 115px;
+    right: 70px;
+}
+
+#dot1Over {
+	position: absolute;
+    top: 106px;
+    left: 27px;
+    width: 15px;
+    height: 15px;	
+
+}
+#dot2Over {
+	position: absolute;
+    top: 28px;
+    left: 71px;
+    width: 15px;
+    height: 15px;	
+}
+#dot3Over {
+	position: absolute;
+    top: 115px;
+    right: 70px;
+    width: 16px;
+    height: 15px;	
+}
+
+#copy1, #copy2 ,#copy3, #copy1_2, #copy5 {
+	position: absolute;
+    text-align: left;
+}
+
+#copy1{
+	top: 185px;
+	left: 13px;
+    width: 125px;
+	font-size: 16px;
+	letter-spacing: 0px;
+	line-height: 17px;
+}
+
+#copy1_2{
+    top: 227px;
+    left: 13px;
+    letter-spacing: 0px;	
+	font-size: 16px;
+	width: 125px;
+	line-height: 17px;
+}
+
+#copy1_3{
+    top: 220px;
+    left: 20px;
+    letter-spacing: 0.5px;	
+	font-size: 16px;
+	width: 235px;
+}
+
+#copy2{
+    top: 268px;
+    left: 13px;
+    width: 230px;
+	font-size: 28px;
+	letter-spacing: 0px;
+	color: #2ea0dd;
+}
+#copy3{
+    top: 185px;
+    left: 13px;
+    letter-spacing: 0px;	
+	font-size: 16px;
+	width: 120px;
+	line-height: 17px;
+}
+
+#copy5{
+    top: 98px;
+    left: 24px;
+    letter-spacing: 0.5px;	
+	font-size: 20px;
+	width: 235px;
+}
+
+#offerTitle{
+    position: absolute;
+    width: 160px;
+    top: 255px;
+	text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+#endOffer {
+    position: absolute;
+	width: 145px;
+    top: 251px;
+	left: 10px;
+}
+#symbol{
+    display: inline;
+    position: relative;
+    width: auto;
+    top: -27px;
+    left: 0px;
+    font-size: 25px;
+    margin-right: -5px;
+}
+
+#offerPrice{
+    display: inline;
+    position: relative;
+    width: auto;
+    top: 5px;
+    left: 0px;
+    padding: 0;
+    font-size: 68px;
+    letter-spacing: -3px;
+}
+#leftContent
+{
+    display: inline-block;
+    position: relative;
+    width: 38px;
+    left: -1px;
+    top: -26px;
+}
+#offerCent{
+	position: absolute;
+    display: block;
+    width: auto;
+    font-size: 25px;
+	top: -27px;
+}
+
+#offerRange{
+    position: absolute;
+    display: block;
+    width: 60px;
+    top: 0px;
+    font-size: 9px;
+	letter-spacing: -0.6px;
+}
+
+#offerTerms{
+	position: absolute;
+    width: 160px;
+    top: 329px;
+	text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+}
+#offerBoltOn{
+    position: absolute;
+    width: 160px;
+    top: 185px;
+    left: 0px;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+	color: #2ea0dd;
+	line-height: 26px;
+}
+
+#offerBoltOn2{
+    position: absolute;
+    width: 160px;
+    top: 362px;
+    left: 0px;
+    padding: 0;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+	color: #2ea0dd;
+}
+
+.line {
+	position: absolute;
+    left: 10px;
+    width: 140px;
+    height: 1px;
+	background-color: #2ea0dd;
+}
+#topLine {
+    top: 252px;
+}
+
+#bottomLine {
+    bottom: 253px;
+}
+
+#offerStepUp{
+    width: 160px;
+    padding-top: 3px;
+    color: black;
+    font-size: 9px;
+    text-align: center;
+}
+
+
+#legal {
+	width: 200px;
+	height: 29px;
+	bottom: 0px;
+	background-position: -131px -312px;
+}
+
+#ctatxt {
+    width: 98px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 10px;
+	color: #FFF;
+}
+
+#cta {
+    position: absolute;
+    width: 98px;
+    height: 26px;
+    background-color: #2ea0dd;
+    right: 31px;
+	bottom: 132px;
+    overflow: hidden;
+	border-radius: 15px;
+}
+
+#ctaBtnOver {
+	position: absolute;
+  	width: 92px;
+  	height: 20px;
+	top: 0px;
+	left: -100px;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 3;
+}
+
+/*---------------*/
