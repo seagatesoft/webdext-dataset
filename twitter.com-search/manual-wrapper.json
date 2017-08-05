@@ -1,0 +1,15 @@
+{
+    "dataRecordXPath": "//li[contains(@class, 'js-stream-item')]",
+    "dataItemXPaths": {
+        "profpic_url": ".//img[contains(@class, 'avatar')]/@src",
+        "screen_name": ".//strong[contains(@class, 'fullname')]/text()",
+        "verfied_account": ".//span[contains(@class, 'Icon')]/span[contains(@class, 'u-hiddenVisually')]/text()",
+        "username": ".//a[contains(@class, 'account-group')]/span[contains(@class, 'username')]/b/text()",
+        "tweet_time": ".//span[contains(@class, '_timestamp')]/text()",
+        "tweet_url": ".//a[contains(@class, 'tweet-timestamp')]/@href",
+        "tweet": ".//p[contains(@class, 'TweetTextSize')]",
+        "reply_count": ".//button[contains(@class, 'js-actionReply')]/span[contains(@class, 'ProfileTweet-actionCount')]/span[contains(@class, 'ProfileTweet-actionCountForPresentation')]/text()",
+        "retweet_count": ".//button[contains(@class, 'js-actionRetweet')]/span[contains(@class, 'ProfileTweet-actionCount')]/span[contains(@class, 'ProfileTweet-actionCountForPresentation')]/text()",
+        "like_count": ".//button[contains(@class, 'js-actionFavorite')]/span[contains(@class, 'ProfileTweet-actionCount')]/span[contains(@class, 'ProfileTweet-actionCountForPresentation')]/text()"
+    }
+}
