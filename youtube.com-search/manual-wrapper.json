@@ -1,15 +1,15 @@
 {
     "dataRecordXPath": "//ol[contains(@class, 'item-section')]/li",
     "dataItemXPaths": {
-        "publisher_url": ".//a[contains(@class, 'spf-link')]/@href",
-        "publisher": ".//a[contains(@class, 'spf-link')]/text()",
+        "publisher_url": ".//a[contains(@class, 'g-hovercard')]/@href",
+        "publisher_name": ".//a[contains(@class, 'g-hovercard')]/text()",
         "description": ".//div[contains(@class, 'yt-lockup-description')]",
-        "video_url": ".//a[contains(@class, 'yt-uix-tile-link')]/@href",
         "title": ".//a[contains(@class, 'yt-uix-tile-link')]/text()",
         "duration": ".//span[contains(@class, 'accessible-description')]/text()",
-        "image_url": ".//span[contains(@class, 'yt-thumb-simple')]/img",
-        "is_ads": ".//span[contains(@class, 'yt-badge-ad')]/text()",
         "published_time": ".//ul[contains(@class, 'yt-lockup-meta-info')]/li[1][./following-sibling::li]/text()",
-        "views": ".//ul[contains(@class, 'yt-lockup-meta-info')]/li[contains(text(), 'views')]/text()"
+        "views": ".//ul[contains(@class, 'yt-lockup-meta-info')]/li[contains(text(), 'views')]/text()",
+        "video_url": ".//a[contains(@class, 'yt-uix-tile-link')]/@href",
+        "image_url": ".//span[contains(@class, 'yt-thumb-simple')]/img",
+        "is_ads": ".//span[contains(@class, 'yt-badge-ad')]/text()"
     }
 }
