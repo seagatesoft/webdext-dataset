@@ -1,0 +1,9 @@
+{
+    "dataRecordXPath": "//div[contains(@class, 'view')]/div[contains(@class, 'product')]",
+    "dataItemXPaths": {
+        "product_url": ".//a[contains(@class, 'productImg')]/@href",
+        "image_url": ".//a[contains(@class, 'productImg')]/img/@src",
+        "price": ".//p[contains(@class, 'productPrice')]/em/text()",
+        "product_name": ".//a[contains(@class, 'productShop-name')]/text()"
+    }
+}
