@@ -1,0 +1,11 @@
+{
+    "dataRecordXPath": "//li[contains(@class, 'js-stream-content')]",
+    "dataItemXPaths": {
+        "image_url": ".//img[contains(@class, 'Trsdu(.42s)')]/@src",
+        "author": ".//div[contains(@class, 'C(#959595)')]/text()",
+        "news_url": ".//a[contains(@class, 'Fw(b)')]/@href",
+        "title": ".//a[contains(@class, 'Fw(b)')]/text()",
+        "description": ".//p[contains(@class, 'Fz(14px)')]/text()",
+        "comments": ".//span[contains(@class, 'comment-btn-count')]/text()"
+    }
+}
