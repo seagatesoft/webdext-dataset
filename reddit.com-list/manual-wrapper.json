@@ -1,0 +1,17 @@
+{
+    "dataRecordXPath": "//div[contains(@class, 'sitetable')]/div[contains(@class, 'thing')]",
+    "dataItemXPaths": {
+        "number": ".//span[contains(@class, 'rank')]/text()",
+        "votes": ".//div[contains(@class, 'unvoted')]/text()",
+        "post_url": ".//a[contains(@class, 'title')]/@href",
+        "image_url": ".//a[contains(@class, 'thumbnail')]/img/@src",
+        "title": ".//a[contains(@class, 'title')]/text()",
+        "source": ".//span[contains(@class, 'domain')]/a/text()",
+        "label": ".//span[contains(@class, 'linkflairlabel')]/text()",
+        "submitted_time": ".//time[contains(@class, 'live-timestamp')]/text()",
+        "submitter": ".//a[contains(@class, 'author')]/text()",
+        "subreddit": ".//a[contains(@class, 'subreddit')]/text()",
+        "comments_url": ".//a[contains(@class, 'bylink')]/@href",
+        "comments_count": ".//a[contains(@class, 'bylink')]/text()"
+    }
+}
