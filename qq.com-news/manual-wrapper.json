@@ -1,0 +1,9 @@
+{
+    "dataRecordXPath": "//ul[contains(@class, 'titMode')]/li",
+    "dataItemXPaths": {
+        "news_url": "./a/@href",
+        "section": "./a/strong/text()",
+        "title": ".//span[contains(@class, 'txt')]/text()",
+        "post_time": ".//span[contains(@class, 'time')]/text()"
+    }
+}
