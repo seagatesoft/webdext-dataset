@@ -1,0 +1,9 @@
+{
+    "dataRecordXPath": "//ul[contains(@class, 'mw-search-results')]/li",
+    "dataItemXPaths": {
+        "page_url": ".//a[@title]/@href",
+        "title": ".//a[@title]",
+        "description": ".//div[contains(@class, 'searchresult')]",
+        "data": ".//div[contains(@class, 'mw-search-result-data')]/text()"
+    }
+}
