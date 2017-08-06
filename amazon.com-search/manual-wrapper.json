@@ -1,0 +1,15 @@
+{
+    "dataRecordXPath": "//li[contains(@class, 's-result-item')]",
+    "dataItemXPaths": {
+        "product_url": ".//a[contains(@class, 's-access-detail-page')]/@href",
+        "image_url": ".//img[contains(@class, 's-access-image')]/@src",
+        "title": ".//h2[contains(@class, 's-access-title')]/text()",
+        "published_date": ".//a[contains(@class, 's-access-detail-page')]/following-sibling::span[contains(@class, 'a-size-small')][contains(@class, 'a-color-secondary')]/text()",
+        "author_1": ".//span[contains(@class, 'a-size-small')][contains(@class, 'a-color-secondary')][contains(text(), 'by')]/following-sibling::span[1]/node()[self::text() or self::a]",
+        "author_2": ".//span[contains(@class, 'a-size-small')][contains(@class, 'a-color-secondary')][contains(text(), 'by')]/following-sibling::span[2]/node()[self::text() or self::a]",
+        "rating": ".//i[contains(@class, 'a-icon-star')]/span/text()",
+        "reviews_url": ".//a[contains(@href, '#customerReviews')]/@href",
+        "reviews_count": ".//a[contains(@href, '#customerReviews')]/text()",
+        "is_sponsored": ".//h5[contains(@class, 's-sponsored-list-header')]/text()[1]"
+    }
+}
