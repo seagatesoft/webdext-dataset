@@ -3,7 +3,7 @@
     "dataItemXPaths": {
         "source_url": ".//h3[contains(concat(' ', @class, ' '), ' t ')]/a/@href",
         "title": ".//h3[contains(concat(' ', @class, ' '), ' t ')]/a",
-        "description": ".//div[contains(concat(' ', @class, ' '), ' c-abstract ')]",
+        "description": ".//div[contains(concat(' ', @class, ' '), ' c-abstract ')] | //div[contains(@class, 'c-span18')]/p[1]",
         "source_display": ".//*[self::a or self::span][contains(concat(' ', @class, ' '), ' c-showurl ')]",
         "image_url": ".//img[contains(concat(' ', @class, ' '), ' c-img ')]/@src"
     }
