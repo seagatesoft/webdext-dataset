@@ -1,0 +1,10 @@
+{
+    "dataRecordXPath": "//div[contains(@class, 'c-container')]",
+    "dataItemXPaths": {
+        "source_url": ".//h3[contains(concat(' ', @class, ' '), ' t ')]/a/@href",
+        "title": ".//h3[contains(concat(' ', @class, ' '), ' t ')]/a",
+        "description": ".//div[contains(concat(' ', @class, ' '), ' c-abstract ')]",
+        "source_display": ".//*[self::a or self::span][contains(concat(' ', @class, ' '), ' c-showurl ')]",
+        "image_url": ".//img[contains(concat(' ', @class, ' '), ' c-img ')]/@src"
+    }
+}
