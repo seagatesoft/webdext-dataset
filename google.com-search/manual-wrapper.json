@@ -1,0 +1,9 @@
+{
+    "dataRecordXPath": "//div[contains(concat(' ', @class, ' '), ' srg ')]/div[contains(concat(' ', @class, ' '), ' g ')]",
+    "dataItemXPaths": {
+        "source_url": ".//h3[contains(concat(' ', @class, ' '), ' r ')]/a/@href",
+        "title": ".//h3[contains(concat(' ', @class, ' '), ' r ')]/a/text()",
+        "source_display": ".//cite[contains(concat(' ', @class, ' '), ' _Rm ')]/text()",
+        "description": ".//span[contains(concat(' ', @class, ' '), ' st ')]"
+    }
+}
