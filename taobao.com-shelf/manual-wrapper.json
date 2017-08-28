@@ -4,7 +4,7 @@
         "product_url": ".//div[contains(@class, 'row-2')]/a/@href",
         "image_url": ".//a[contains(@class, 'pic-link')]/img/@src",
         "price": ".//div[contains(@class, 'price')]/strong/text()",
-        "sold_count": "//div[contains(@class, 'deal-cnt')]/text()",
+        "sold_count": ".//div[contains(@class, 'deal-cnt')]/text()",
         "product_name": ".//div[contains(@class, 'row-2')]/a[contains(@class, 'J_ClickStat')]",
         "store_name": ".//a[contains(@class, 'shopname')]/span[2]/text()",
         "store_url": ".//a[contains(@class, 'shopname')]/@href",
